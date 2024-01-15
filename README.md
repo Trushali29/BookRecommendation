@@ -88,18 +88,18 @@ For this model, we have sorted the books by rating for the same author and same 
 
 **5. Content-based recommendation of books**
 
-We have implemented a content-based recommendation system that recommends books by calculating similarities in Book Titles. For this, TF-IDF feature vectors are created for unigrams and bigrams of Book-Titles where only those books' data has been considered that have at least 80 ratings (because of limited resources).
+Implemented a content-based recommendation system that recommends books by calculating similarities in Book Titles. For this, TF-IDF feature vectors are created for unigrams and bigrams of Book-Titles where only those books' data has been considered that have at least 80 ratings (because of limited resources).
 
 **6. Collaborative-based recommendation of books**
 
-A collaborative Filtering Recommendation System considers user ratings and finds cosine similarities in ratings by several users to recommend books. To implement this, we took only those books' data that have at least 80 ratings in all (because of limited resources).
+A collaborative Filtering Recommendation System considers user ratings and finds cosine similarities in ratings by several users to recommend books. To implement this, Consider only those books' data that have at least 80 ratings in all (because of limited resources).
 
 **7. Nearest Neighbour-based recommendation system**
 
-To train the Nearest Neighbours model, we have created a compressed sparse row matrix taking ratings of each Book by each User individually. This matrix trains the Nearest Neighbours model and then finds n nearest neighbours using the cosine similarity metric.
+To train the Nearest Neighbours model, creating a compressed sparse row matrix by taking ratings of each Book by each User individually. This matrix trains the Nearest Neighbours model and then finds n nearest neighbours using the cosine similarity metric.
 
 **8. Hybrid-based recommendation system (content + collaborative)**
 
-We have built a hybrid recommendation system using both content-based filtering and collaborative filtering systems. A percentile score is given to the results obtained from both content and collaborative filtering models and is combined to recommend top n books.
+Implementing a hybrid recommendation system using both content-based filtering and collaborative filtering systems. A percentile score is given to the results obtained from both content and collaborative filtering models and is combined to recommend top n books.
 
  
